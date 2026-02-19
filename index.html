@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Website (Lorem Ipsum)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <!-- NAVBAR (Bootstrap) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Lorem Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="vh-100 d-flex align-items-center bg-light">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Welcome</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <!-- Profile Image (uses Tech.jpg) -->
+      <img src="images/Tech.jpg"
+           alt="Technology-themed image showing a glowing digital network or circuit-like connections"
+           class="img-fluid rounded-circle shadow mt-3"
+           width="200" height="200">
+
+      <!-- Brief Bio -->
+      <article class="mt-4 mx-auto" style="max-width: 760px;">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quam consequatur ea voluptatibus error neque animi temporibus quibusdam iure libero, labore et? Ut repellendus necessitatibus molestias magnam nulla incidunt distinctio.
+        </p>
+      </article>
+
+      <!-- Address (placeholder) -->
+      <address class="mt-3">
+        123 Lorem Street<br>
+        Ipsum City, XX 00000<br>
+        United States
+      </address>
+
+      <a class="btn btn-primary mt-3" href="#portfolio">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-3">About Me</h2>
+
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eaque autem labore temporibus quo accusantium amet dolor, distinctio eius itaque exercitationem nesciunt rem vero consectetur, natus delectus omnis earum dicta?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <h4>Favorite Movies/Books (Bullet List)</h4>
+          <ul>
+            <li>Lorem Ipsum: The Movie</li>
+            <li>Dolor Sit Amet</li>
+            <li>Consectetur Adventures</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Hobbies (Ordered List)</h4>
+          <ol>
+            <li>Building web pages</li>
+            <li>Learning new tools</li>
+            <li>Exploring UI design</li>
+          </ol>
+        </div>
+      </div>
+
+      <h4 class="mt-4">Favorite Sites (Links)</h4>
+      <p class="mb-0">
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a> |
+        <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a> |
+        <a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a>
+      </p>
+
+      <!-- Multimedia element (video) -->
+      <h4 class="mt-4">Multimedia</h4>
+      <p class="text-muted">Embedded video</p>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/watch?v=6z72ZT5B7ZI"
+          title="Embedded video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-3">Portfolio / Projects</h2>
+      <p class="text-muted">Project titles and descriptions are placeholders (Lorem Ipsum).</p>
+
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/Tech.jpg"
+                 class="card-img-top"
+                 alt="Technology-themed image showing a glowing digital network or circuit-like connections">
+            <div class="card-body">
+              <h5 class="card-title">Project One: Bootstrap Layout</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum modi eveniet, accusantium libero obcaecati nulla sed, assumenda asperiores tenetur nam totam earum deserunt officia commodi, molestias harum eligendi iste atque?</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/Gaming.jpg"
+                 class="card-img-top"
+                 alt="Image of a gaming setup with multiple monitors and colorful lighting">
+            <div class="card-body">
+              <h5 class="card-title">Project Two: UI Components</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, molestias ducimus libero quod explicabo ea optio, pariatur odio reiciendis accusamus quaerat cumque, voluptate non ad neque magnam quis expedita est?</p>
+              <div class="alert alert-info mb-0" role="alert">
+                Bootstrap alert example (placeholder message)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/Nature.jpg"
+                 class="card-img-top"
+                 alt="Scenic nature image showing a sunrise or sunset over mountains and a landscape">
+            <div class="card-body">
+              <h5 class="card-title">Project Three: Content Design</h5>
+              <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel eveniet sed ab ullam eligendi! Soluta voluptas dolorem provident eligendi facere maiores nobis, impedit ducimus corporis vero at ea a?</p>
+              <a class="btn btn-outline-dark" href="#contact">Contact about this</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal (Bootstrap) -->
+      <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModal1Label">Project One Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. This modal is included to demonstrate a Bootstrap component.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <h4 class="mt-5">Image Carousel</h4>
+      <p class="text-muted">Carousel images relate to interests/experiences (placeholder).</p>
+
+      <div id="interestCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="0"
+                  class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#interestCarousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="images/Gaming.jpg" class="d-block w-100"
+                 alt="Image of a gaming setup with multiple monitors and colorful lighting">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Nature.jpg" class="d-block w-100"
+                 alt="Scenic nature image showing a sunrise or sunset over mountains and a landscape">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Tech.jpg" class="d-block w-100"
+                 alt="Technology-themed image showing a glowing digital network or circuit-like connections">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#interestCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#interestCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCHEDULE (table required) -->
+  <section id="schedule" class="py-5">
+    <div class="container">
+      <h2 class="mb-3">Weekly Schedule</h2>
+      <p class="text-muted">All schedule items are placeholders.</p>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Day</th>
+              <th>Morning</th>
+              <th>Afternoon</th>
+              <th>Evening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <td>Monday</td>
+              <td>Lorem Class</td>
+              <td>Ipsum Study</td>
+              <td>Dolor Project</td>
+            </tr>
+            <tr class="table-success">
+              <td>Tuesday</td>
+              <td>Lab Placeholder</td>
+              <td>Work Placeholder</td>
+              <td>Gym Placeholder</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Wednesday</td>
+              <td>Study Placeholder</td>
+              <td>Meeting Placeholder</td>
+              <td>Reading Placeholder</td>
+            </tr>
+            <tr class="table-info">
+              <td>Thursday</td>
+              <td>Lecture Placeholder</td>
+              <td>Homework Placeholder</td>
+              <td>Hobby Placeholder</td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Friday</td>
+              <td>Review Placeholder</td>
+              <td>Lab Placeholder</td>
+              <td>Free Time Placeholder</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (form required) -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-3">Contact</h2>
+      <p class="text-muted">Demonstration form only. Do not enter real personal information.</p>
+
+      <!-- Bootstrap validation -->
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Lorem Ipsum" required>
+            <div class="invalid-feedback">Please enter a name.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="lorem@example.com" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Lorem ipsum..." required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn btn-outline-secondary ms-2" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <small>&copy; 2026 Lorem Ipsum Portfolio</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap validation script -->
+<script>
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+
+</body>
+</html>
