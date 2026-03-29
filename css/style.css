@@ -1,0 +1,19 @@
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 80px; /* for fixed navbar */
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
